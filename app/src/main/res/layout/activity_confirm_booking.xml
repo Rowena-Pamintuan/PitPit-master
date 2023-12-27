@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".confirm_booking">
+
+     <com.google.android.gms.maps.MapView
+         android:id="@+id/mapView"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+
+         android:layout_weight="1">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                >
+
+                <!-- Buttons -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pickup Location:"
+                        android:textSize="18sp"
+                        android:textStyle="bold|normal"
+                        android:textColor="@color/secondary_color"
+                        android:layout_marginStart="8dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sample adress na mahaba hanggang dulo"
+                        android:layout_marginStart="8dp"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Drop-off Location:"
+                        android:textSize="18sp"
+                        android:textStyle="bold|normal"
+                        android:textColor="@color/secondary_color"
+                        android:layout_marginStart="8dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sample adress na mahaba hanggang dulo"
+                        android:layout_marginStart="8dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:gravity="bottom"
+             android:layout_margin="10dp"
+             >
+
+
+             <com.google.android.material.floatingactionbutton.FloatingActionButton
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:backgroundTint="@color/white"
+                 android:src="@drawable/baseline_arrow_back_24"
+                 />
+
+         </LinearLayout>
+
+     </com.google.android.gms.maps.MapView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notes:"
+            android:textSize="14sp"
+            android:textStyle="bold|normal"
+            android:textColor="@color/secondary_color"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click to add notes for PitPit Driver"
+            android:layout_marginStart="8dp"
+            />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Promo Code:"
+                android:textSize="14sp"
+                android:textStyle="bold|normal"
+                android:textColor="@color/secondary_color"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Have a Promo Code? "
+                android:layout_marginStart="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Here"
+                android:textStyle="bold"
+                android:textColor="@color/secondary_color"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Method:"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/secondary_color"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Cash"
+                android:textStyle="normal"
+                android:textColor="@color/secondary_color"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Amount:"
+                android:textSize="14sp"
+                android:textStyle="bold|normal"
+                android:textColor="@color/secondary_color"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" ₱ 250.00"
+                android:textStyle="normal"
+                android:textColor="@color/secondary_color"
+                />
+
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cornerRadius="50dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:text="Confirm Booking"
+            />
+
+
+        </LinearLayout>
+
+
+</LinearLayout>
